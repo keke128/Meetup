@@ -1,0 +1,1 @@
+﻿var col = ds.Person.all();col.remove();ds.Person.all();

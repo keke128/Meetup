@@ -1,0 +1,1 @@
+﻿var lines = loadText(ds.getModelFolder().path + 'sample.txt').split('\r'),	columns,	person;	lines.forEach(function(aLine){		if(aLine) {				columns = aLine.split('\t');		person = new ds.Person ({			regId: columns[0],			name: columns[1]		});		person.save();	}	});ds.Person.all();
